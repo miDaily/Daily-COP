@@ -1,0 +1,48 @@
+{
+	"name": "hardhat-project",
+	"license": "MIT",
+	"scripts": {
+		"hh-compile": "hardhat compile",
+		"prettier": "prettier --write 'contracts/**/*.sol'",
+		"hh-node": "hardhat node --show-accounts",
+		"hh-test": "hardhat test",
+		"hh-deploy": "hardhat deploy",
+		"hh-deploy-mumbai": "hardhat deploy --network mumbai",
+		"hh-deploy-polygon": "hardhat deploy --network polygon",
+		"hh-deploy-goerli": "hardhat deploy --network goerli",
+		"hh-deploy-ethereum": "hardhat deploy --network ethereum",
+		"hh-mint-dlycop-mumbai": "hardhat mint-dlycop --network mumbai",
+		"hh-get-role-members-mumbai": "hardhat get-role-members --network mumbai",
+		"hh-get-role-members-polygon": "hardhat get-role-members --network polygon",
+		"hh-grant-relayer-role-mumbai": "hardhat grant-relayer-role --network mumbai",
+		"hh-get-relayers-mumbai": "hardhat get-relayers --network mumbai",
+		"hh-get-relayers-polygon": "hardhat get-relayers --network polygon"
+	},
+	"devDependencies": {
+		"@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers@^0.3.0-beta.10",
+		"@nomiclabs/hardhat-etherscan": "^2.1.4",
+		"@nomiclabs/hardhat-waffle": "^2.0.1",
+		"@nomiclabs/hardhat-web3": "^2.0.0",
+		"@openzeppelin/test-helpers": "^0.5.12",
+		"@types/chai": "^4.2.21",
+		"@types/mocha": "^8.2.3",
+		"@types/node": "^16.3.0",
+		"chai": "^4.3.4",
+		"ethereum-waffle": "^3.4.0",
+		"ethers": "^5.4.1",
+		"hardhat": "^2.4.3",
+		"hardhat-deploy": "0.8.9",
+		"hardhat-deploy-ethers": "^0.3.0-beta.10",
+		"prettier": "2.3.2",
+		"prettier-plugin-solidity": "1.0.0-beta.17",
+		"ts-node": "^10.0.0",
+		"typescript": "^4.3.5",
+		"web3": "^1.4.0"
+	},
+	"dependencies": {
+		"@openzeppelin/contracts": "^4.2.0",
+		"@openzeppelin/contracts-upgradeable": "^4.2.0",
+		"bn.js": "^5.2.0",
+		"dotenv": "^10.0.0"
+	}
+}

@@ -1,0 +1,7 @@
+# Ignore artifacts:
+build
+coverage
+artifacts
+cache
+deployments
+node_modules

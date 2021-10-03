@@ -1,0 +1,9 @@
+node_modules
+
+#Hardhat files
+cache
+artifacts
+deployments/localhost
+
+# environment variables
+.env
