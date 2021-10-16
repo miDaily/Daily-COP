@@ -85,6 +85,7 @@ const config: HardhatUserConfig = {
 		defaultAdmin: {
 			default: 4,
 			polygon: "0x96C2770900f4D0Dd76819eca77cB3b40e119BdCe",
+			ethereum: "0x6B566f478b08e9fd3eCb138fdC0D0Fd1305DbcA0",
 		},
 		relayer: {
 			default: 5,
