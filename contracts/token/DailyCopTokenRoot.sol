@@ -7,12 +7,14 @@ import "../interfaces/IMintableERC20.sol";
 import "@openzeppelin/contracts/access/AccessControlEnumerable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/token/ERC20/extensions/draft-ERC20Permit.sol";
+import "@openzeppelin/contracts/utils/Multicall.sol";
 
 contract DailyCopTokenRoot is
 	ERC20Permit,
 	IMintableERC20,
 	AccessControlEnumerable,
-	Ownable
+	Ownable,
+	Multicall
 {
 	// Roles
 	bytes32 public constant PREDICATE_ROLE = keccak256("PREDICATE_ROLE");
