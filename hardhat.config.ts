@@ -21,19 +21,24 @@ const config: HardhatUserConfig = {
 	networks: {
 		hardhat: {
 			accounts: accounts(),
-			deploy: ["deploy/hardhat/v1", "deploy/polygon/v1", "deploy/ethereum/v1"],
+			deploy: [
+				"deploy/hardhat/v1",
+				"deploy/polygon/v1",
+				"deploy/polygon/v2",
+				"deploy/ethereum/v1",
+			],
 			tags: ["test", "local"],
 		},
 		mumbai: {
 			url: node_url("mumbai"),
 			accounts: accounts("mumbai"),
-			deploy: ["deploy/polygon/v1"],
+			deploy: ["deploy/polygon/v2"],
 			tags: ["staging"],
 		},
 		polygon: {
 			url: node_url("polygon"),
 			accounts: accounts("polygon"),
-			deploy: ["deploy/polygon/v1"],
+			deploy: ["deploy/polygon/v2"],
 			tags: ["production"],
 		},
 		goerli: {
@@ -80,6 +85,7 @@ const config: HardhatUserConfig = {
 		defaultAdmin: {
 			default: 4,
 			polygon: "0x96C2770900f4D0Dd76819eca77cB3b40e119BdCe",
+			ethereum: "0x6B566f478b08e9fd3eCb138fdC0D0Fd1305DbcA0",
 		},
 		relayer: {
 			default: 5,
