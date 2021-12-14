@@ -16,7 +16,8 @@
 		"hh-get-role-members-polygon": "hardhat get-role-members --network polygon",
 		"hh-grant-relayer-role-mumbai": "hardhat grant-relayer-role --network mumbai",
 		"hh-get-relayers-mumbai": "hardhat get-relayers --network mumbai",
-		"hh-get-relayers-polygon": "hardhat get-relayers --network polygon"
+		"hh-get-relayers-polygon": "hardhat get-relayers --network polygon",
+		"hh-get-price-polygon": "hardhat get-price --network polygon"
 	},
 	"devDependencies": {
 		"@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers@^0.3.0-beta.10",

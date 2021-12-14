@@ -12,6 +12,7 @@ import "./tasks/mintDlyCop";
 import "./tasks/getRoleMembers";
 import "./tasks/grantRelayerRole";
 import "./tasks/getRelayers";
+import "./tasks/getPrice";
 
 // You need to export an object to set up your config
 // Go to https://hardhat.org/config/ to learn more
@@ -95,6 +96,9 @@ const config: HardhatUserConfig = {
 		defaultAdminRelayer: {
 			default: 6,
 			polygon: "0x9C973BDc62b8812A60B4955aaDF87D028FeBD311",
+		},
+		quickswapPairWithUSDT: {
+			polygon: "0x0AaF30e02688f17E4C9517dbd61B7aabee657dD3",
 		},
 	},
 };
